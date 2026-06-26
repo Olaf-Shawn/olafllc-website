@@ -1,0 +1,9 @@
+# OS / OneDrive junk
+desktop.ini
+Thumbs.db
+.DS_Store
+*~
+
+# Editor
+.vscode/
+.idea/
