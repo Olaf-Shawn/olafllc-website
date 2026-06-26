@@ -119,12 +119,12 @@
     pointer-events: none;
   }
   .hero-triquetra {
-    position: absolute; right: -120px; top: 50%; transform: translateY(-50%);
-    width: 620px; height: 620px; opacity: 0.06; pointer-events: none;
+    position: absolute; right: -70px; top: 50%; transform: translateY(-50%);
+    width: 520px; height: auto; opacity: 0.10; pointer-events: none;
   }
   .hero-content { position: relative; max-width: 760px; }
   .hero .eyebrow { display: inline-block; margin-bottom: 22px; }
-  .hero h1 { font-size: clamp(2.6rem, 5.6vw, 4.4rem); font-weight: 800; margin-bottom: 24px; letter-spacing: -0.01em; }
+  .hero h1 { font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 800; margin-bottom: 24px; letter-spacing: -0.015em; }
   .hero h1 .gold {
     background: linear-gradient(120deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold-deep) 100%);
     -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
@@ -184,7 +184,7 @@
   .operator .stat-num { font-family: 'Playfair Display', serif; font-size: 2.4rem; color: var(--gold-light); font-weight: 700; }
   .operator .stat-label { font-size: 13px; color: rgba(232,226,213,0.6); }
   .operator-visual { display: flex; align-items: center; justify-content: center; }
-  .operator-visual svg { width: 78%; max-width: 360px; opacity: 0.9; }
+  .operator-visual img { width: 72%; max-width: 330px; height: auto; opacity: 0.95; }
 
   /* ── Process ── */
   .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
@@ -239,6 +239,12 @@
   .footer-badge img { height: 54px; width: auto; }
 
   /* ── Responsive ── */
+  /* energy: scroll reveal + gold accent */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .sec-head.center .eyebrow::after { content: ''; display: block; width: 48px; height: 2px; margin: 14px auto 0; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 2px; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
   @media (max-width: 900px) {
     .services-grid, .operator .wrap, .process-grid, .contact-grid, .footer-top { grid-template-columns: 1fr; }
     .operator .wrap { gap: 40px; }
@@ -290,12 +296,7 @@
 
 <!-- ══ HERO ══ -->
 <header class="hero">
-  <svg class="hero-triquetra" viewBox="0 0 100 100" fill="none" stroke="#B8922E" stroke-width="1.4" aria-hidden="true">
-    <path d="M50 18 C38 38, 38 52, 50 70 C62 52, 62 38, 50 18 Z"/>
-    <path d="M50 18 C38 38, 38 52, 50 70 C62 52, 62 38, 50 18 Z" transform="rotate(120 50 50)"/>
-    <path d="M50 18 C38 38, 38 52, 50 70 C62 52, 62 38, 50 18 Z" transform="rotate(240 50 50)"/>
-    <circle cx="50" cy="48" r="30"/>
-  </svg>
+  <img class="hero-triquetra" src="assets/triquetra-gold.png" alt="" aria-hidden="true">
   <div class="wrap hero-content">
     <span class="eyebrow">Build · Advise · Fund</span>
     <h1>We help businesses transform with <span class="gold">AI</span> — and bring the capital to make it real.</h1>
@@ -397,30 +398,35 @@
   <div class="wrap">
     <div class="operator-copy">
       <span class="eyebrow">The Operator Behind Olaf</span>
-      <h2>We don't just advise. We build and fund alongside you.</h2>
+      <h2>From Marine Corps discipline to mortgage and capital strategy.</h2>
       <p>
-        Most consultants hand you a deck and walk away. Most lenders only see a file. Olaf LLC
-        was built to do both — and to stay in the deal. We bring operating experience, real
-        capital relationships, and a working command of AI to every engagement.
+        For more than 25 years I've worked in mortgage lending and executive leadership in
+        Hawaii — delivering operational scale and high-touch structuring for the nuanced
+        borrower scenarios unique to the islands.
       </p>
       <p>
-        That combination is the point: the same partner who helps you design the strategy can
-        help you build the tooling, finance the real estate, and introduce the people who get
-        it across the line.
+        Since founding my advisory firm in 2020, the focus has widened beyond traditional
+        lending. I advise non-QM and wholesale mortgage companies on national growth, sales
+        structure, recruiting, and scalable operations; originate residential loans through a
+        licensed relationship with HomeMac Mortgage; and structure select hard money and
+        commercial transactions. I also partner with investors in distressed real estate —
+        capital alignment, stabilization, repositioning, and disposition — and helped establish
+        a private investment vehicle focused on distressed real estate and specialty finance.
+      </p>
+      <p>
+        Across every venture the objective is the same: align capital, strategy, and execution
+        to produce durable results. If you're looking for a strategic mortgage advisor, a
+        capital partner, or a thoughtful operator focused on disciplined growth, I welcome the
+        conversation.
       </p>
       <div class="stats">
+        <div><div class="stat-num">25+</div><div class="stat-label">Years in mortgage<br>&amp; lending</div></div>
+        <div><div class="stat-num">2020</div><div class="stat-label">Advisory firm<br>founded</div></div>
         <div><div class="stat-num">4</div><div class="stat-label">Disciplines<br>under one roof</div></div>
-        <div><div class="stat-num">50</div><div class="stat-label">States of<br>nationwide reach</div></div>
-        <div><div class="stat-num">1</div><div class="stat-label">Partner from idea<br>to funding</div></div>
       </div>
     </div>
     <div class="operator-visual">
-      <svg viewBox="0 0 100 100" fill="none" stroke="#D4B85F" stroke-width="1" aria-hidden="true">
-        <path d="M50 18 C38 38, 38 52, 50 70 C62 52, 62 38, 50 18 Z"/>
-        <path d="M50 18 C38 38, 38 52, 50 70 C62 52, 62 38, 50 18 Z" transform="rotate(120 50 50)"/>
-        <path d="M50 18 C38 38, 38 52, 50 70 C62 52, 62 38, 50 18 Z" transform="rotate(240 50 50)"/>
-        <circle cx="50" cy="48" r="30"/>
-      </svg>
+      <img src="assets/triquetra-gold.png" alt="Olaf LLC triquetra emblem">
     </div>
   </div>
 </section>
@@ -539,7 +545,7 @@
     </div>
     <div class="footer-bottom">
       <p class="footer-legal">
-        &copy; 2026 Olaf LLC. All rights reserved. &nbsp;|&nbsp; Mortgage services offered through Home Mortgage Alliance Corporation (HMAC), 4 Hutton Centre Dr., Ste. 500, Santa Ana, CA 92707 &mdash; <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/1165808" target="_blank" rel="noopener" style="color:rgba(232,226,213,0.7);text-decoration:underline;">NMLS #1165808</a>. This is not a commitment to lend. All loans subject to credit approval, underwriting, and program guidelines; terms subject to change. Equal Housing Lender. AI advisory, fund, and capital-introduction services are provided by Olaf LLC and are separate from mortgage brokerage activity.
+        &copy; 2026 Olaf LLC. All rights reserved. &nbsp;|&nbsp; Mortgage services offered through Home Mortgage Alliance Corporation (HMAC), 4 Hutton Centre Dr., Ste. 500, Santa Ana, CA 92707 &mdash; <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/1165808" target="_blank" rel="noopener" style="color:rgba(232,226,213,0.7);text-decoration:underline;">NMLS #1165808</a>. This is not a commitment to lend. All loans subject to credit approval, underwriting, and program guidelines; terms subject to change. Equal Housing Lender. This advertisement is not from HUD, VA, or FHA and was not reviewed or approved by any government agency. AI advisory, fund, and capital-introduction services are provided by Olaf LLC and are separate from mortgage brokerage activity.
       </p>
       <div class="footer-badge">
         <img src="assets/equal-housing-lender.png" alt="Equal Housing Lender">
@@ -556,6 +562,21 @@
   document.querySelectorAll('#navLinks a').forEach(function (a) {
     a.addEventListener('click', function () { document.getElementById('navLinks').classList.remove('open'); });
   });
+
+  // Scroll-reveal for a touch of energy
+  (function () {
+    var els = document.querySelectorAll('.sec-head, .svc, .step, .operator-copy, .operator-visual, .contact-info, #contactForm');
+    if (!els.length) return;
+    els.forEach(function (el) { el.classList.add('reveal'); });
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io.observe(el); });
+    } else {
+      els.forEach(function (el) { el.classList.add('in'); });
+    }
+  })();
 
   // Contact form — local confirm only until FORM_ENDPOINT is wired
   function handleContact(e) {
