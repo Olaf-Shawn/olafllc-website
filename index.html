@@ -522,8 +522,9 @@
       </div>
     </div>
 
-    <!-- NOTE: form posts nowhere yet. Wire `FORM_ENDPOINT` (Formspree/Power Automate/etc.) to go live. -->
-    <form id="contactForm" onsubmit="return handleContact(event)">
+    <!-- Contact form posts to Formspree (AJAX), with native POST fallback if JS is off. -->
+    <form id="contactForm" action="https://formspree.io/f/mdargkew" method="POST" onsubmit="return handleContact(event)">
+      <input type="hidden" name="_subject" value="New inquiry from olafllc.com">
       <div class="field">
         <label for="cf-name">Name</label>
         <input type="text" id="cf-name" name="name" placeholder="Your name" required>
@@ -552,7 +553,7 @@
         <textarea id="cf-msg" name="message" placeholder="A sentence or two about what you're working on."></textarea>
       </div>
       <button type="submit" class="btn btn-gold">Send Message</button>
-      <div class="form-success" id="formSuccess">✓ Thanks — your message is ready to send. We'll be in touch shortly.</div>
+      <div class="form-success" id="formSuccess">✓ Thanks — your message is on its way. We'll be in touch shortly.</div>
     </form>
   </div>
 </section>
@@ -621,11 +622,28 @@
     e.preventDefault();
     var f = e.target;
     if (!f.checkValidity()) { f.reportValidity(); return false; }
-    // TODO: POST to a form backend (Formspree / Power Automate / etc.), then redirect or confirm.
-    f.querySelector('button[type=submit]').style.display = 'none';
-    document.getElementById('formSuccess').style.display = 'block';
-    console.log('Contact lead (not yet transmitted):', {
-      name: f.name.value, email: f.email.value, phone: f.phone.value, topic: f.topic.value, message: f.message.value
+    var btn = f.querySelector('button[type=submit]');
+    var label = btn.textContent;
+    btn.disabled = true; btn.textContent = 'Sending…';
+    fetch(f.action, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: new FormData(f)
+    }).then(function (resp) {
+      if (resp.ok) {
+        btn.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+        f.reset();
+      } else {
+        return resp.json().then(function (data) {
+          var msg = (data && data.errors) ? data.errors.map(function (x) { return x.message; }).join(', ')
+                                          : 'Something went wrong. Please email shawn@olafllc.com.';
+          throw new Error(msg);
+        });
+      }
+    }).catch(function (err) {
+      btn.disabled = false; btn.textContent = label;
+      alert((err && err.message) ? err.message : 'Network error. Please email shawn@olafllc.com or call (808) 440-0935.');
     });
     return false;
   }
