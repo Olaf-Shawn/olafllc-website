@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Estate Lending — Olaf LLC | Investor, DSCR, Fix-and-Flip, Bridge &amp; Jumbo</title>
+<meta name="description" content="Real estate financing for investors and borrowers the banks turn away — DSCR, fix-and-flip, bridge, hard money, jumbo and non-QM. 25+ years in Hawaii mortgage. NMLS #1165808 via HMAC. Hawaii, West Coast, nationwide.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Real Estate Lending — Olaf LLC">
+<meta property="og:description" content="Financing for investors and borrowers the banks turn away — fast, flexible, and structured around the deal.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://olafllc.com/lending.html">
+<meta property="og:image" content="https://olafllc.com/assets/olaf-logo-gold.png">
+
+<link rel="icon" type="image/png" href="assets/olaf-logo-gold.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Real Estate Lending",
+  "provider": { "@type": "ProfessionalService", "name": "Olaf LLC", "url": "https://olafllc.com" },
+  "description": "Real estate financing for investors and borrowers: DSCR and investor loans, fix-and-flip and construction, bridge and hard money, and jumbo and non-QM residential. Mortgage services through Home Mortgage Alliance Corporation (HMAC), NMLS #1165808.",
+  "areaServed": ["Hawaii", "California", "United States"],
+  "url": "https://olafllc.com/lending.html"
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:       #F7F4ED;
+    --cream-deep:  #EFE8D9;
+    --cream-card:  #FBF9F4;
+    --ink:         #1A1611;
+    --ink-soft:    #2A241B;
+    --gold:        #B8922E;
+    --gold-deep:   #9A7820;
+    --gold-light:  #D4B85F;
+    --gold-bright: #E4Cd82;
+    --text:        #3C362B;
+    --text-soft:   #6A6253;
+    --muted:       #948B79;
+    --line:        rgba(26,22,17,0.10);
+    --line-gold:   rgba(184,146,46,0.30);
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+
+  h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--ink); font-weight: 700; line-height: 1.15; }
+
+  .eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold-deep);
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 500;
+    padding: 14px 28px; border-radius: 4px; cursor: pointer;
+    border: 1px solid transparent; transition: all 0.2s; white-space: nowrap;
+  }
+  .btn-gold {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+    color: #fff; box-shadow: 0 4px 16px rgba(154,120,32,0.22);
+  }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(154,120,32,0.30); }
+  .btn-outline { background: transparent; border-color: var(--gold-deep); color: var(--gold-deep); }
+  .btn-outline:hover { background: var(--gold-deep); color: #fff; }
+  .btn-ghost-light { background: transparent; border-color: rgba(255,255,255,0.4); color: #fff; }
+  .btn-ghost-light:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+
+  /* ── Nav ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(247,244,237,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 110px; }
+  .nav-logo img { height: 88px; width: auto; display: block; }
+  .nav-links { display: flex; align-items: center; gap: 30px; }
+  .nav-links a { font-size: 14.5px; font-weight: 500; color: var(--text); transition: color 0.18s; }
+  .nav-links a:hover { color: var(--gold-deep); }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--ink); }
+
+  /* ── Hero ── */
+  .hero { position: relative; padding: 88px 0 76px; overflow: hidden; }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 20%, rgba(212,184,95,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 60% at 10% 90%, rgba(184,146,46,0.10) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-triquetra {
+    position: absolute; right: 36px; top: 50%; transform: translateY(-50%);
+    width: 150px; height: auto; opacity: 0.12; pointer-events: none;
+  }
+  .hero-content { position: relative; max-width: 820px; }
+  .hero .eyebrow { display: inline-block; margin-bottom: 22px; }
+  .hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.4rem); font-weight: 800; margin-bottom: 24px; letter-spacing: -0.015em; }
+  .hero h1 .gold {
+    background: linear-gradient(120deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold-deep) 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    font-style: italic;
+  }
+  .hero-sub { font-size: 19px; font-weight: 300; color: var(--text-soft); max-width: 640px; margin-bottom: 36px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+  /* ── Trust strip ── */
+  .trust { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--cream-deep); }
+  .trust-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 22px; padding: 22px 0; }
+  .trust-item { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: var(--text-soft); font-weight: 500; }
+  .trust-item svg { width: 18px; height: 18px; color: var(--gold-deep); flex-shrink: 0; }
+
+  /* ── Section scaffolding ── */
+  section { padding: 88px 0; }
+  .sec-head { max-width: 720px; margin-bottom: 52px; }
+  .sec-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  .sec-head .eyebrow { display: block; margin-bottom: 16px; }
+  .sec-head h2 { font-size: clamp(2rem, 4vw, 2.9rem); margin-bottom: 18px; }
+  .sec-head p { font-size: 17px; color: var(--text-soft); font-weight: 300; }
+
+  /* ── Credit-world band labels ── */
+  .band-label { display: flex; align-items: center; gap: 14px; margin-bottom: 10px; }
+  .band-label .bl-tag {
+    font-family: 'Cinzel', serif; font-size: 10.5px; font-weight: 600; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--gold-deep); border: 1px solid var(--line-gold);
+    border-radius: 20px; padding: 4px 13px;
+  }
+
+  /* ── Scenario cards (investor) ── */
+  .scenarios { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .scn {
+    position: relative; background: var(--cream-card); border: 1px solid var(--line);
+    border-radius: 10px; padding: 34px 34px; transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+  }
+  .scn:hover { transform: translateY(-4px); box-shadow: 0 18px 44px rgba(26,22,17,0.08); border-color: var(--line-gold); }
+  .scn-icon { width: 50px; height: 50px; border-radius: 10px; margin-bottom: 20px; background: linear-gradient(135deg, rgba(184,146,46,0.14), rgba(212,184,95,0.10)); display: flex; align-items: center; justify-content: center; }
+  .scn-icon svg { width: 26px; height: 26px; color: var(--gold-deep); }
+  .scn h3 { font-size: 1.4rem; margin-bottom: 10px; }
+  .scn .scn-q { font-size: 14px; color: var(--gold-deep); font-weight: 600; margin-bottom: 12px; }
+  .scn p { font-size: 14.5px; color: var(--text-soft); margin-bottom: 18px; }
+  .scn-list { list-style: none; margin-bottom: 22px; }
+  .scn-list li { font-size: 14px; color: var(--text); padding: 6px 0 6px 24px; position: relative; }
+  .scn-list li::before { content: ''; position: absolute; left: 4px; top: 13px; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+  .scn-cta { font-size: 14.5px; font-weight: 600; color: var(--gold-deep); display: inline-flex; align-items: center; gap: 7px; transition: gap 0.18s; }
+  .scn:hover .scn-cta { gap: 12px; }
+
+  /* ── Residential (consumer) ── */
+  .resi { background: var(--cream-deep); }
+  .resi-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .resi-card { background: var(--cream-card); border: 1px solid var(--line); border-radius: 10px; padding: 32px 34px; transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s; }
+  .resi-card:hover { transform: translateY(-4px); box-shadow: 0 18px 44px rgba(26,22,17,0.08); border-color: var(--line-gold); }
+  .resi-card h3 { font-size: 1.35rem; margin-bottom: 10px; }
+  .resi-card p { font-size: 14.5px; color: var(--text-soft); }
+
+  /* ── Operator strip ── */
+  .operator { background: var(--ink); color: #E8E2D5; }
+  .operator .wrap { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: center; }
+  .operator .eyebrow { color: var(--gold-light); }
+  .operator h2 { color: #fff; font-size: clamp(1.9rem, 3.6vw, 2.5rem); margin: 16px 0 22px; }
+  .operator p { color: rgba(232,226,213,0.80); font-weight: 300; font-size: 16.5px; margin-bottom: 18px; }
+  .operator .stats { display: flex; gap: 40px; margin-top: 32px; }
+  .operator .stat-num { font-family: 'Playfair Display', serif; font-size: 2.4rem; color: var(--gold-light); font-weight: 700; }
+  .operator .stat-label { font-size: 13px; color: rgba(232,226,213,0.6); }
+  .operator-aside { background: rgba(212,184,95,0.08); border: 1px solid rgba(212,184,95,0.22); border-radius: 12px; padding: 32px; }
+  .operator-aside h3 { color: #fff; font-size: 1.2rem; margin-bottom: 14px; font-family: 'Playfair Display', serif; }
+  .operator-aside ul { list-style: none; }
+  .operator-aside li { font-size: 14.5px; color: rgba(232,226,213,0.82); padding: 8px 0 8px 24px; position: relative; }
+  .operator-aside li::before { content: ''; position: absolute; left: 2px; top: 15px; width: 6px; height: 6px; border-radius: 50%; background: var(--gold-light); }
+
+  /* ── Process ── */
+  .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+  .step { padding: 30px; border: 1px solid var(--line); border-radius: 10px; background: var(--cream-card); }
+  .step-num { font-family: 'Cinzel', serif; font-size: 14px; font-weight: 700; color: var(--gold-deep); letter-spacing: 0.1em; margin-bottom: 14px; }
+  .step h3 { font-size: 1.25rem; margin-bottom: 10px; }
+  .step p { font-size: 14.5px; color: var(--text-soft); }
+
+  /* ── Compliance note inline ── */
+  .compliance-note {
+    background: var(--cream-card); border: 1px solid var(--line-gold); border-left: 3px solid var(--gold);
+    border-radius: 8px; padding: 20px 24px; font-size: 13.5px; color: var(--text-soft);
+    max-width: 900px; margin: 0 auto;
+  }
+  .compliance-note strong { color: var(--ink); font-weight: 600; }
+
+  /* ── CTA band ── */
+  .cta-band { background: linear-gradient(120deg, var(--ink) 0%, var(--ink-soft) 100%); color: #fff; text-align: center; }
+  .cta-band h2 { color: #fff; font-size: clamp(2rem, 4vw, 2.9rem); margin-bottom: 16px; }
+  .cta-band p { color: rgba(255,255,255,0.7); font-size: 17px; font-weight: 300; max-width: 560px; margin: 0 auto 18px; }
+  .cta-band .cta-fine { font-size: 12.5px; color: rgba(255,255,255,0.5); max-width: 560px; margin: 0 auto 30px; }
+  .cta-band .hero-actions { justify-content: center; }
+
+  /* ── Footer ── */
+  footer { background: var(--ink); color: rgba(232,226,213,0.65); padding: 64px 0 32px; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .footer-logo img { height: 84px; margin-bottom: 18px; }
+  .footer-brand p { font-size: 14px; max-width: 320px; line-height: 1.7; }
+  .footer-col h4 { font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 16px; }
+  .footer-col a, .footer-col p { display: block; font-size: 14px; color: rgba(232,226,213,0.65); margin-bottom: 10px; transition: color 0.18s; }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom { padding-top: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; align-items: flex-start; }
+  .footer-legal { font-size: 12px; color: rgba(232,226,213,0.45); line-height: 1.7; max-width: 760px; }
+  .footer-badge { display: flex; align-items: center; gap: 14px; }
+  .footer-badge img { height: 54px; width: auto; }
+
+  /* energy: scroll reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .sec-head.center .eyebrow::after { content: ''; display: block; width: 48px; height: 2px; margin: 14px auto 0; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 2px; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .scenarios, .resi-grid, .operator .wrap, .process-grid, .footer-top { grid-template-columns: 1fr; }
+    .operator .wrap { gap: 36px; }
+  }
+  @media (max-width: 680px) {
+    .wrap { padding: 0 22px; }
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .nav-inner { height: 92px; }
+    .nav-logo img { height: 70px; }
+    .nav-links.open {
+      display: flex; flex-direction: column; position: absolute; top: 92px; left: 0; right: 0;
+      background: var(--cream); border-bottom: 1px solid var(--line); padding: 20px 22px; gap: 18px; align-items: flex-start;
+    }
+    .nav-cta .btn-outline { display: none; }
+    section { padding: 60px 0; }
+    .hero { padding: 60px 0 52px; }
+    .footer-bottom { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Olaf LLC — Home">
+      <img src="assets/olaf-logo-gold.png" alt="Olaf LLC">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="ai.html">AI Advisory</a>
+      <a href="lending.html">Lending</a>
+      <a href="index.html#fund">Fund</a>
+      <a href="index.html#capital">Capital</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="index.html#contact" class="btn btn-outline">Get in Touch</a>
+      <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="btn btn-gold">Book a Call</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<header class="hero">
+  <img class="hero-triquetra" src="assets/triquetra-gold.png" alt="" aria-hidden="true">
+  <div class="wrap hero-content">
+    <span class="eyebrow">Real Estate Lending</span>
+    <h1>Financing structured around the <span class="gold">deal</span> — not the box the bank checks.</h1>
+    <p class="hero-sub">
+      For investors and borrowers the big lenders turn away. DSCR and investor loans,
+      fix-and-flip and construction, bridge and hard money, plus jumbo and non-QM residential —
+      with 25+ years of Hawaii mortgage experience behind every file.
+    </p>
+    <div class="hero-actions">
+      <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="btn btn-gold">Book a Call →</a>
+      <a href="#investor" class="btn btn-outline">Find Your Scenario</a>
+    </div>
+  </div>
+</header>
+
+<!-- ══ TRUST ══ -->
+<div class="trust">
+  <div class="wrap trust-inner">
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4Z"/></svg> Licensed Mortgage — NMLS #1165808</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg> Equal Housing Lender</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg> Hawaii · West Coast · Nationwide</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8v8M8 12h8"/><circle cx="12" cy="12" r="10"/></svg> 25+ years in mortgage</div>
+  </div>
+</div>
+
+<!-- ══ INVESTOR / BUSINESS-PURPOSE ══ -->
+<section id="investor">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band-label"><span class="bl-tag">Investor &amp; Business-Purpose</span></div>
+      <h2>Built for investors</h2>
+      <p>If you're buying, building, flipping, or holding investment property, this is the home-field. Flexible, deal-driven financing — and a lender who understands investor deals because he works in real estate, not just on it.</p>
+    </div>
+
+    <div class="scenarios">
+
+      <!-- DSCR / rental -->
+      <div class="scn">
+        <div class="scn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+        <h3>DSCR &amp; Rental Loans</h3>
+        <div class="scn-q">Buying or refinancing a rental?</div>
+        <p>Qualify on the property's cash flow, not just your tax returns. Built for investors growing a portfolio of long-term or short-term rentals.</p>
+        <ul class="scn-list">
+          <li>Single properties or portfolios</li>
+          <li>Long-term &amp; short-term rentals</li>
+          <li>Cash-flow-based qualification</li>
+        </ul>
+        <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="scn-cta">Start a scenario →</a>
+      </div>
+
+      <!-- Fix and flip / construction -->
+      <div class="scn">
+        <div class="scn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 7l3 3M5 19l1-4 9-9 3 3-9 9-4 1ZM18 4l2 2"/></svg></div>
+        <h3>Fix-and-Flip &amp; Construction</h3>
+        <div class="scn-q">Flipping or building?</div>
+        <p>Financing that moves at the speed of the project — purchase plus rehab, ground-up, and value-add deals structured around the timeline.</p>
+        <ul class="scn-list">
+          <li>Purchase + rehab financing</li>
+          <li>Ground-up &amp; new construction</li>
+          <li>Structured around the project</li>
+        </ul>
+        <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="scn-cta">Start a scenario →</a>
+      </div>
+
+      <!-- Bridge / hard money -->
+      <div class="scn">
+        <div class="scn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M2 12h20M5 12V8M19 12V8M2 16h20M9 12v4M15 12v4"/></svg></div>
+        <h3>Bridge &amp; Hard Money</h3>
+        <div class="scn-q">Need to move fast?</div>
+        <p>Short-term, asset-based financing for time-sensitive deals — bridging between purchase and permanent, or closing when speed is everything.</p>
+        <ul class="scn-list">
+          <li>Time-sensitive acquisitions</li>
+          <li>Asset-based underwriting</li>
+          <li>Bridge to permanent or sale</li>
+        </ul>
+        <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="scn-cta">Start a scenario →</a>
+      </div>
+
+      <!-- Commercial / specialty -->
+      <div class="scn">
+        <div class="scn-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M6 21V7h6v14M12 21V11h6v10M9 10h.01M9 14h.01M15 14h.01"/></svg></div>
+        <h3>Commercial &amp; Specialty</h3>
+        <div class="scn-q">Something outside the box?</div>
+        <p>Select commercial and specialty-finance transactions that don't fit a standard residential mold — structured case by case around the asset and the plan.</p>
+        <ul class="scn-list">
+          <li>Select commercial transactions</li>
+          <li>Specialty &amp; structured finance</li>
+          <li>Deal-by-deal structuring</li>
+        </ul>
+        <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="scn-cta">Start a scenario →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ RESIDENTIAL / CONSUMER ══ -->
+<section class="resi" id="residential">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="band-label"><span class="bl-tag">Residential &amp; Jumbo</span></div>
+      <h2>For the borrower the bank's checklist missed</h2>
+      <p>Strong borrowers get turned down for reasons that have nothing to do with their ability to pay — self-employment, complex income, a jumbo amount, or an island property the big lenders don't understand. Two and a half decades of Hawaii experience is built for exactly those files.</p>
+    </div>
+
+    <div class="resi-grid">
+      <div class="resi-card">
+        <h3>Jumbo Purchase &amp; Refinance</h3>
+        <p>For higher loan amounts and high-value properties — including the island scenarios that don't fit a mainland lender's template. Structured to the borrower, not the box.</p>
+      </div>
+      <div class="resi-card">
+        <h3>Non-QM &amp; Self-Employed</h3>
+        <p>For self-employed borrowers, complex or non-traditional income, and strong files that conventional underwriting won't read correctly. Alternative documentation where it fits.</p>
+      </div>
+    </div>
+
+    <div style="margin-top:36px;">
+      <div class="compliance-note">
+        <strong>A note on rates and terms:</strong> every situation is different, so we keep specific
+        rates, payments, and terms to the conversation, where they can be quoted accurately for your
+        actual file. Reach out and we'll give you real numbers for your scenario. This is not a
+        commitment to lend; all loans are subject to credit approval, underwriting, and program
+        guidelines.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ OPERATOR EDGE ══ -->
+<section class="operator" id="edge">
+  <div class="wrap">
+    <div class="operator-copy">
+      <span class="eyebrow">Why Olaf</span>
+      <h2>A lender who knows the deal from both sides.</h2>
+      <p>
+        For more than 25 years I've worked in mortgage lending and executive leadership in Hawaii —
+        delivering operational scale and high-touch structuring for the nuanced borrower scenarios
+        unique to the islands.
+      </p>
+      <p>
+        I'm also active in real estate as an investor through Olaf's fund. That means when an
+        investor brings me a deal, I understand it from the inside — the timeline, the numbers,
+        and what actually makes it work — not just the loan file. It's the difference between a
+        lender who processes your deal and one who gets it.
+      </p>
+      <div class="stats">
+        <div><div class="stat-num">25+</div><div class="stat-label">Years in mortgage<br>&amp; lending</div></div>
+        <div><div class="stat-num">HI</div><div class="stat-label">Islands expertise,<br>nationwide reach</div></div>
+      </div>
+    </div>
+    <div class="operator-aside">
+      <h3>Why borrowers come to us</h3>
+      <ul>
+        <li>Deals the banks turned away</li>
+        <li>Speed when the timeline is tight</li>
+        <li>Structure built around the property and plan</li>
+        <li>An investor's read on an investor's deal</li>
+        <li>High-touch, direct access — not a call center</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROCESS ══ -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">How It Works</span>
+      <h2>Simple to start. Built to close.</h2>
+    </div>
+    <div class="process-grid">
+      <div class="step"><div class="step-num">01</div><h3>Tell us the deal</h3><p>A quick call or message about the property and what you're trying to do. Buying, building, flipping, holding, or refinancing — we'll tell you straight whether and how it works.</p></div>
+      <div class="step"><div class="step-num">02</div><h3>Structure it</h3><p>We come back with the right program and structure for your scenario, and walk you through real numbers for your actual file.</p></div>
+      <div class="step"><div class="step-num">03</div><h3>Close it</h3><p>We move it through to the closing table — fast where speed matters, and high-touch the whole way.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BAND ══ -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Have a deal to finance?</h2>
+    <p>Tell us the scenario and we'll give you a straight answer and real numbers for your file. The first conversation is free.</p>
+    <p class="cta-fine">This is not a commitment to lend. All loans subject to credit approval, underwriting, and program guidelines; terms subject to change. Equal Housing Lender.</p>
+    <div class="hero-actions">
+      <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="btn btn-gold">Book a Call →</a>
+      <a href="tel:18084400935" class="btn btn-ghost-light">Call (808) 440-0935</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="assets/olaf-logo-gold.png" alt="Olaf LLC"></div>
+        <p>An operator-led firm: AI advisory and development, real estate lending, a real estate fund, and capital introductions. From consulting to capital — one partner, from idea to funding.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="ai.html">AI Advisory &amp; Development</a>
+        <a href="lending.html">Real Estate Lending</a>
+        <a href="index.html#fund">Fund &amp; Distressed Assets</a>
+        <a href="index.html#capital">Capital &amp; Introductions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="tel:18084400935">(808) 440-0935</a>
+        <a href="mailto:shawn@olafllc.com">shawn@olafllc.com</a>
+        <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener">Book a Call</a>
+        <a href="index.html#contact">Contact Form</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-legal">
+        &copy; 2026 Olaf LLC. All rights reserved. &nbsp;|&nbsp; Mortgage services offered through Home Mortgage Alliance Corporation (HMAC), 4 Hutton Centre Dr., Ste. 500, Santa Ana, CA 92707 &mdash; <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/1165808" target="_blank" rel="noopener" style="color:rgba(232,226,213,0.7);text-decoration:underline;">NMLS #1165808</a>. This is not a commitment to lend. All loans subject to credit approval, underwriting, and program guidelines; terms subject to change. Equal Housing Lender. This advertisement is not from HUD, VA, or FHA and was not reviewed or approved by any government agency. AI advisory, fund, and capital-introduction services are provided by Olaf LLC and are separate from mortgage brokerage activity.
+      </p>
+      <div class="footer-badge">
+        <img src="assets/equal-housing-lender.png" alt="Equal Housing Lender">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('#navLinks a').forEach(function (a) {
+    a.addEventListener('click', function () { document.getElementById('navLinks').classList.remove('open'); });
+  });
+
+  // Scroll-reveal
+  (function () {
+    var els = document.querySelectorAll('.sec-head, .scn, .resi-card, .operator-copy, .operator-aside, .step, .compliance-note');
+    if (!els.length) return;
+    els.forEach(function (el) { el.classList.add('reveal'); });
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io.observe(el); });
+    } else {
+      els.forEach(function (el) { el.classList.add('in'); });
+    }
+  })();
+</script>
+</body>
+</html>
