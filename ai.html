@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Advisory &amp; Development — Olaf LLC | Fractional AI Officer, Custom Builds</title>
+<meta name="description" content="Olaf LLC redesigns small and mid-sized businesses around AI — not bolted on, but built in. Fractional AI Officer engagements and build-and-hand-off projects from an operator running four companies on AI. Hawaii-based, nationwide.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="AI Advisory &amp; Development — Olaf LLC">
+<meta property="og:description" content="I don't just advise on AI — I build businesses with it. Fractional AI Officer and build-and-hand-off engagements for operators.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://olafllc.com/ai.html">
+<meta property="og:image" content="https://olafllc.com/assets/olaf-logo-gold.png">
+
+<link rel="icon" type="image/png" href="assets/olaf-logo-gold.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "AI Advisory and Development",
+  "provider": { "@type": "ProfessionalService", "name": "Olaf LLC", "url": "https://olafllc.com" },
+  "description": "AI advisory and hands-on development for small and mid-sized businesses: Fractional AI Officer retained engagements and build-and-hand-off projects that redesign operations around AI.",
+  "areaServed": ["Hawaii", "California", "United States"],
+  "url": "https://olafllc.com/ai.html"
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:       #F7F4ED;
+    --cream-deep:  #EFE8D9;
+    --cream-card:  #FBF9F4;
+    --ink:         #1A1611;
+    --ink-soft:    #2A241B;
+    --gold:        #B8922E;
+    --gold-deep:   #9A7820;
+    --gold-light:  #D4B85F;
+    --gold-bright: #E4Cd82;
+    --text:        #3C362B;
+    --text-soft:   #6A6253;
+    --muted:       #948B79;
+    --line:        rgba(26,22,17,0.10);
+    --line-gold:   rgba(184,146,46,0.30);
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+
+  h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--ink); font-weight: 700; line-height: 1.15; }
+
+  .eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold-deep);
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 500;
+    padding: 14px 28px; border-radius: 4px; cursor: pointer;
+    border: 1px solid transparent; transition: all 0.2s; white-space: nowrap;
+  }
+  .btn-gold {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+    color: #fff; box-shadow: 0 4px 16px rgba(154,120,32,0.22);
+  }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(154,120,32,0.30); }
+  .btn-outline { background: transparent; border-color: var(--gold-deep); color: var(--gold-deep); }
+  .btn-outline:hover { background: var(--gold-deep); color: #fff; }
+  .btn-ghost-light { background: transparent; border-color: rgba(255,255,255,0.4); color: #fff; }
+  .btn-ghost-light:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+
+  /* ── Nav ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(247,244,237,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 110px; }
+  .nav-logo img { height: 88px; width: auto; display: block; }
+  .nav-links { display: flex; align-items: center; gap: 30px; }
+  .nav-links a { font-size: 14.5px; font-weight: 500; color: var(--text); transition: color 0.18s; }
+  .nav-links a:hover { color: var(--gold-deep); }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--ink); }
+
+  /* ── Hero ── */
+  .hero { position: relative; padding: 88px 0 76px; overflow: hidden; }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 20%, rgba(212,184,95,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 60% at 10% 90%, rgba(184,146,46,0.10) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-triquetra {
+    position: absolute; right: 36px; top: 50%; transform: translateY(-50%);
+    width: 150px; height: auto; opacity: 0.12; pointer-events: none;
+  }
+  .hero-content { position: relative; max-width: 820px; }
+  .hero .eyebrow { display: inline-block; margin-bottom: 22px; }
+  .hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.4rem); font-weight: 800; margin-bottom: 24px; letter-spacing: -0.015em; }
+  .hero h1 .gold {
+    background: linear-gradient(120deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold-deep) 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    font-style: italic;
+  }
+  .hero-sub { font-size: 19px; font-weight: 300; color: var(--text-soft); max-width: 640px; margin-bottom: 36px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+  /* ── Trust strip ── */
+  .trust { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--cream-deep); }
+  .trust-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 22px; padding: 22px 0; }
+  .trust-item { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: var(--text-soft); font-weight: 500; }
+  .trust-item svg { width: 18px; height: 18px; color: var(--gold-deep); flex-shrink: 0; }
+
+  /* ── Section scaffolding ── */
+  section { padding: 88px 0; }
+  .sec-head { max-width: 720px; margin-bottom: 52px; }
+  .sec-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  .sec-head .eyebrow { display: block; margin-bottom: 16px; }
+  .sec-head h2 { font-size: clamp(2rem, 4vw, 2.9rem); margin-bottom: 18px; }
+  .sec-head p { font-size: 17px; color: var(--text-soft); font-weight: 300; }
+
+  /* ── Thesis band ── */
+  .thesis { background: var(--cream-deep); }
+  .thesis .wrap { max-width: 900px; }
+  .thesis-lead {
+    font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2.1rem);
+    color: var(--ink); font-weight: 600; line-height: 1.35; margin-bottom: 26px;
+  }
+  .thesis-lead .gold { color: var(--gold-deep); font-style: italic; }
+  .thesis p { font-size: 17px; color: var(--text-soft); font-weight: 300; margin-bottom: 18px; }
+  .thesis p:last-child { margin-bottom: 0; }
+
+  /* ── Two ways to work ── */
+  .ways-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .way {
+    position: relative; background: var(--cream-card); border: 1px solid var(--line);
+    border-radius: 12px; padding: 40px 38px; transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+  }
+  .way:hover { transform: translateY(-4px); box-shadow: 0 18px 44px rgba(26,22,17,0.08); border-color: var(--line-gold); }
+  .way.primary { border-color: var(--line-gold); background: linear-gradient(180deg, #FBF7EC 0%, var(--cream-card) 100%); }
+  .way-flag {
+    position: absolute; top: 24px; right: 24px; font-family: 'Cinzel', serif;
+    font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--gold-deep); border: 1px solid var(--line-gold); border-radius: 20px; padding: 4px 12px;
+  }
+  .way-kicker { font-family: 'Cinzel', serif; font-size: 11px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 14px; }
+  .way h3 { font-size: 1.6rem; margin-bottom: 14px; }
+  .way > p { font-size: 15.5px; color: var(--text-soft); margin-bottom: 20px; }
+  .way-list { list-style: none; margin-bottom: 26px; }
+  .way-list li { font-size: 14.5px; color: var(--text); padding: 7px 0 7px 24px; position: relative; }
+  .way-list li::before { content: ''; position: absolute; left: 4px; top: 14px; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+  .way-best { font-size: 13.5px; color: var(--text-soft); border-top: 1px solid var(--line); padding-top: 18px; }
+  .way-best strong { color: var(--ink); font-weight: 600; }
+
+  /* ── Proof / case studies ── */
+  .proof { background: var(--ink); color: #E8E2D5; }
+  .proof .sec-head h2 { color: #fff; }
+  .proof .sec-head .eyebrow { color: var(--gold-light); }
+  .proof .sec-head p { color: rgba(232,226,213,0.75); }
+  .proof .sec-head.center .eyebrow::after { background: linear-gradient(90deg, var(--gold-light), var(--gold)); }
+  .cases { display: flex; flex-direction: column; gap: 22px; }
+  .case {
+    display: grid; grid-template-columns: 200px 1fr; gap: 36px; align-items: start;
+    background: rgba(255,255,255,0.03); border: 1px solid rgba(212,184,95,0.20);
+    border-radius: 12px; padding: 34px 36px;
+  }
+  .case-side .case-tag {
+    display: inline-block; font-family: 'Cinzel', serif; font-size: 10px; font-weight: 600;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink);
+    background: var(--gold-light); border-radius: 20px; padding: 4px 13px; margin-bottom: 14px;
+  }
+  .case-side .case-name { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: #fff; font-weight: 700; line-height: 1.2; }
+  .case-side .case-role { font-size: 12.5px; color: var(--gold-light); margin-top: 6px; letter-spacing: 0.03em; }
+  .case-side .case-sector { font-size: 12.5px; color: rgba(232,226,213,0.55); margin-top: 4px; }
+  .case-body h3 { color: #fff; font-size: 1.15rem; margin-bottom: 12px; font-family: 'Playfair Display', serif; }
+  .case-body p { color: rgba(232,226,213,0.80); font-weight: 300; font-size: 15.5px; margin-bottom: 14px; }
+  .case-body p:last-child { margin-bottom: 0; }
+  .case-body .placeholder { color: var(--gold-light); font-weight: 400; font-style: italic; }
+  .case-metrics { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 18px; }
+  .case-metric { background: rgba(212,184,95,0.10); border: 1px solid rgba(212,184,95,0.22); border-radius: 8px; padding: 10px 16px; }
+  .case-metric .cm-v { font-family: 'Playfair Display', serif; font-size: 1.15rem; color: var(--gold-light); font-weight: 700; }
+  .case-metric .cm-l { font-size: 11.5px; color: rgba(232,226,213,0.60); }
+
+  /* ── Method travels ── */
+  .travels-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 8px; }
+  .tcard { background: var(--cream-card); border: 1px solid var(--line); border-radius: 10px; padding: 32px 30px; }
+  .tcard .ti { width: 46px; height: 46px; border-radius: 10px; margin-bottom: 18px; background: linear-gradient(135deg, rgba(184,146,46,0.14), rgba(212,184,95,0.10)); display: flex; align-items: center; justify-content: center; }
+  .tcard .ti svg { width: 24px; height: 24px; color: var(--gold-deep); }
+  .tcard h3 { font-size: 1.25rem; margin-bottom: 10px; }
+  .tcard p { font-size: 14.5px; color: var(--text-soft); }
+
+  /* ── How it starts (process) ── */
+  .process-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+  .step { padding: 30px; border: 1px solid var(--line); border-radius: 10px; background: var(--cream-card); }
+  .step-num { font-family: 'Cinzel', serif; font-size: 14px; font-weight: 700; color: var(--gold-deep); letter-spacing: 0.1em; margin-bottom: 14px; }
+  .step h3 { font-size: 1.25rem; margin-bottom: 10px; }
+  .step p { font-size: 14.5px; color: var(--text-soft); }
+
+  /* ── Method / attribution note ── */
+  .method { background: var(--cream-deep); }
+  .method .wrap { max-width: 860px; text-align: center; }
+  .method .eyebrow { display: block; margin-bottom: 16px; }
+  .method .eyebrow::after { content: ''; display: block; width: 48px; height: 2px; margin: 14px auto 0; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 2px; }
+  .method h2 { font-size: clamp(1.7rem, 3.4vw, 2.4rem); margin-bottom: 20px; }
+  .method p { font-size: 16.5px; color: var(--text-soft); font-weight: 300; margin-bottom: 16px; }
+  .method .credit { font-size: 13.5px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 22px; margin-top: 28px; }
+
+  /* ── Also offered (footnote services) ── */
+  .also { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .also-card { background: var(--cream-card); border: 1px solid var(--line); border-radius: 10px; padding: 30px 32px; }
+  .also-card h3 { font-size: 1.3rem; margin-bottom: 10px; }
+  .also-card p { font-size: 15px; color: var(--text-soft); }
+
+  /* ── CTA band ── */
+  .cta-band { background: linear-gradient(120deg, var(--ink) 0%, var(--ink-soft) 100%); color: #fff; text-align: center; }
+  .cta-band h2 { color: #fff; font-size: clamp(2rem, 4vw, 2.9rem); margin-bottom: 16px; }
+  .cta-band p { color: rgba(255,255,255,0.7); font-size: 17px; font-weight: 300; max-width: 560px; margin: 0 auto 32px; }
+  .cta-band .hero-actions { justify-content: center; }
+
+  /* ── Footer ── */
+  footer { background: var(--ink); color: rgba(232,226,213,0.65); padding: 64px 0 32px; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .footer-logo img { height: 84px; margin-bottom: 18px; }
+  .footer-brand p { font-size: 14px; max-width: 320px; line-height: 1.7; }
+  .footer-col h4 { font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 16px; }
+  .footer-col a, .footer-col p { display: block; font-size: 14px; color: rgba(232,226,213,0.65); margin-bottom: 10px; transition: color 0.18s; }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom { padding-top: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; align-items: flex-start; }
+  .footer-legal { font-size: 12px; color: rgba(232,226,213,0.45); line-height: 1.7; max-width: 760px; }
+  .footer-badge { display: flex; align-items: center; gap: 14px; }
+  .footer-badge img { height: 54px; width: auto; }
+
+  /* energy: scroll reveal + gold accent */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .sec-head.center .eyebrow::after { content: ''; display: block; width: 48px; height: 2px; margin: 14px auto 0; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 2px; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .ways-grid, .process-grid, .travels-grid, .also, .footer-top { grid-template-columns: 1fr; }
+    .case { grid-template-columns: 1fr; gap: 20px; }
+  }
+  @media (max-width: 680px) {
+    .wrap { padding: 0 22px; }
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .nav-inner { height: 92px; }
+    .nav-logo img { height: 70px; }
+    .nav-links.open {
+      display: flex; flex-direction: column; position: absolute; top: 92px; left: 0; right: 0;
+      background: var(--cream); border-bottom: 1px solid var(--line); padding: 20px 22px; gap: 18px; align-items: flex-start;
+    }
+    .nav-cta .btn-outline { display: none; }
+    section { padding: 60px 0; }
+    .hero { padding: 60px 0 52px; }
+    .footer-bottom { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Olaf LLC — Home">
+      <img src="assets/olaf-logo-gold.png" alt="Olaf LLC">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#services">What We Do</a>
+      <a href="ai.html">AI Advisory</a>
+      <a href="index.html#lending">Lending</a>
+      <a href="index.html#fund">Fund</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="index.html#contact" class="btn btn-outline">Get in Touch</a>
+      <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="btn btn-gold">Book a Call</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<header class="hero">
+  <img class="hero-triquetra" src="assets/triquetra-gold.png" alt="" aria-hidden="true">
+  <div class="wrap hero-content">
+    <span class="eyebrow">AI Advisory &amp; Development</span>
+    <h1>I don't just advise on <span class="gold">AI</span> — I build businesses with it.</h1>
+    <p class="hero-sub">
+      Most "AI consulting" stops at slides. I take a seat in your business and rebuild how it
+      runs — automating the work, wiring AI through operations, and leaving you with leverage:
+      a company that does more on a fraction of the hours. I'm doing exactly that across four of
+      my own ventures right now.
+    </p>
+    <div class="hero-actions">
+      <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="btn btn-gold">Book a Call →</a>
+      <a href="#cases" class="btn btn-outline">See What I've Built</a>
+    </div>
+  </div>
+</header>
+
+<!-- ══ TRUST ══ -->
+<div class="trust">
+  <div class="wrap trust-inner">
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4zM9 9h6v6H9zM2 10v4M22 10v4M10 2h4M10 22h4"/></svg> Operator, not a slide deck</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Built &amp; running on AI across 4 companies</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg> ROI-first — not science projects</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg> Hawaii · serving nationwide</div>
+  </div>
+</div>
+
+<!-- ══ THESIS ══ -->
+<section class="thesis">
+  <div class="wrap">
+    <p class="thesis-lead">
+      The point of AI isn't a chatbot or a tool you bolt on the side. It's
+      <span class="gold">leverage</span> — designing the business so the work mostly runs itself,
+      with people freed for the judgment that actually moves it.
+    </p>
+    <p>
+      I don't drop in a tool and leave. I look at how the whole business runs — sales, operations,
+      approvals, accounting, compliance — and rebuild those workflows with AI woven through them,
+      so the routine work is automated or handled with a light human touch, and every automated
+      decision still has a person who owns it.
+    </p>
+    <p>
+      The proof is how I work. I'm currently active in four businesses — a wholesale mortgage
+      lender, a security-services firm, a real estate fund, and more — and AI is what lets me be
+      genuinely effective in each on a part-time footing. That's the same outcome I build for
+      clients: not more software to babysit, but a business that runs leaner and better.
+    </p>
+  </div>
+</section>
+
+<!-- ══ TWO WAYS TO WORK ══ -->
+<section id="engage">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Two Ways to Work Together</span>
+      <h2>Take a seat, or build and hand it off</h2>
+      <p>Some owners want me embedded for the long run. Others want the engine built, proven, and handed over so they're self-sufficient. I do both — and they're priced and scoped differently.</p>
+    </div>
+    <div class="ways-grid">
+
+      <!-- Retained seat -->
+      <div class="way primary">
+        <span class="way-flag">Flagship</span>
+        <div class="way-kicker">Retained Seat</div>
+        <h3>Fractional AI Officer</h3>
+        <p>I take a standing seat in your business — the AI leader you couldn't justify hiring full-time — and keep making it run better, month over month.</p>
+        <ul class="way-list">
+          <li>Own the AI roadmap and build it, not just advise</li>
+          <li>Automate operations, approvals, reporting &amp; back office</li>
+          <li>A human owner and guardrails on every automated decision</li>
+          <li>Ongoing — I stay in it as the business compounds</li>
+        </ul>
+        <p class="way-best"><strong>Best when:</strong> you want AI leadership embedded for the long haul and a business that keeps getting leaner. I take on only one or two of these at a time.</p>
+      </div>
+
+      <!-- Build & hand-off -->
+      <div class="way">
+        <div class="way-kicker">Fixed Arc</div>
+        <h3>Build &amp; Hand-Off</h3>
+        <p>I design it, build it, and advise you through stand-up — then hand you a self-running operation and step away. No permanent dependency.</p>
+        <ul class="way-list">
+          <li>Business plan, operations design &amp; the AI systems to run it</li>
+          <li>Built to transfer — your team runs it without me</li>
+          <li>Clear start, clear finish, clear deliverables</li>
+          <li>I can return later to extend it as you grow</li>
+        </ul>
+        <p class="way-best"><strong>Best when:</strong> you want the capability built and proven, then owned in-house. This is a consultant engagement with a clean exit.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROOF / CASE STUDIES ══ -->
+<section class="proof" id="cases">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Receipts</span>
+      <h2>Built with AI — not theorized</h2>
+      <p>Three businesses, three different industries, three different ways of working. The common thread is the method: redesign the operation around AI, then make it run.</p>
+    </div>
+    <div class="cases">
+
+      <!-- GCM -->
+      <div class="case">
+        <div class="case-side">
+          <span class="case-tag">Retained Seat</span>
+          <div class="case-name">Greenhills Capital Management</div>
+          <div class="case-role">Owner &amp; Sr. Sales Manager</div>
+          <div class="case-sector">Multi-state wholesale mortgage</div>
+        </div>
+        <div class="case-body">
+          <h3>Rebuilt a wholesale lender on an automated stack</h3>
+          <p>
+            Brought in with a partner to rebuild an existing multi-state wholesale lender that
+            had one person in operations, no real sales team, and non-delegated lending partners
+            only. We re-architected the whole business around AI: automated broker approval, a
+            fully automated broker portal, and an internal portal running operations, accounting,
+            HR, and compliance — fully automated or with a light human assist.
+          </p>
+          <p>
+            On the business side, we added warehouse lenders, took them from non-delegated to
+            three delegated lending relationships (more on the way), and stood up a sales
+            organization from the ground up — built across dedicated subdomains so every facet
+            of the company has its own AI-driven home.
+          </p>
+          <!-- ▼▼▼ SHAWN: when GCM is producing, replace the metric below with the volume line ▼▼▼ -->
+          <div class="case-metrics">
+            <div class="case-metric"><div class="cm-v">1 → full stack</div><div class="cm-l">Ops to automated operation</div></div>
+            <div class="case-metric"><div class="cm-v">0 → 3 → 10</div><div class="cm-l">AEs (scaling, next 60 days)</div></div>
+            <div class="case-metric"><div class="cm-v">3+</div><div class="cm-l">Delegated relationships</div></div>
+          </div>
+          <!-- Drop-in replacement once live:
+          <div class="case-metrics">
+            <div class="case-metric"><div class="cm-v">$0 → $40M / mo</div><div class="cm-l">Closed loan volume</div></div>
+            <div class="case-metric"><div class="cm-v">Full stack</div><div class="cm-l">Approval, portals, back office automated</div></div>
+          </div>
+          <p class="placeholder">If you're in this business, you know $40M a month is the number that matters.</p>
+          -->
+          <!-- ▲▲▲ end GCM swap ▲▲▲ -->
+        </div>
+      </div>
+
+      <!-- Nova Sentinel -->
+      <div class="case">
+        <div class="case-side">
+          <span class="case-tag">Build &amp; Hand-Off</span>
+          <div class="case-name">Nova Sentinel</div>
+          <div class="case-role">Consultant — design &amp; build</div>
+          <div class="case-sector">Security services</div>
+        </div>
+        <div class="case-body">
+          <h3>Designed a security firm to run on AI from day one</h3>
+          <p>
+            A pure build-and-hand-off engagement. I'm using AI to develop the business plan, the
+            strategic plan, and the operations design for a new security-services company — so
+            the firm is built to run on AI from the start rather than retrofitted later.
+          </p>
+          <p>
+            Once it's stood up, I step away and the team runs it. The plan is to return down the
+            road — when the business is generating revenue — to design the next layer of systems.
+            The whole point is to leave them self-sufficient, not dependent.
+          </p>
+        </div>
+      </div>
+
+      <!-- Real estate fund -->
+      <div class="case">
+        <div class="case-side">
+          <span class="case-tag">Retained Seat</span>
+          <div class="case-name">Private Real Estate Fund</div>
+          <div class="case-role">Operating partner</div>
+          <div class="case-sector">Distressed &amp; value-add real estate</div>
+        </div>
+        <div class="case-body">
+          <h3>AI through deal analysis and investor operations</h3>
+          <p>
+            For a private real estate fund focused on distressed and value-add assets, I use AI to
+            review distressed opportunities in bulk and surface recommendations — turning a slow,
+            manual screening process into something fast and repeatable.
+          </p>
+          <p>
+            On the operations side, AI is helping stand up the investor-facing platform: secure
+            document storage, reporting, and tax documents, so investors have a clean home for
+            everything they need.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══ METHOD TRAVELS ══ -->
+<section id="travels">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">The Method Travels</span>
+      <h2>Lending, real estate, services — or your business</h2>
+      <p>I know lending and real estate cold, so operators in those worlds get a partner who already speaks the language. But the approach isn't industry-specific — it works for any small or mid-sized business with real workflows to streamline.</p>
+    </div>
+    <div class="travels-grid">
+      <div class="tcard">
+        <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h3>Find the leverage</h3>
+        <p>We map how the business actually runs and find the workflows where AI removes the most drag — the repetitive, high-volume, rule-clear work.</p>
+      </div>
+      <div class="tcard">
+        <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4zM9 9h6v6H9zM2 10v4M22 10v4M10 2h4M10 22h4"/></svg></div>
+        <h3>Build it in</h3>
+        <p>I build the automations and tools and wire them into operations — designed to run reliably, with a human owning every decision that matters.</p>
+      </div>
+      <div class="tcard">
+        <div class="ti"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18M7 14l4-4 3 3 5-6"/></svg></div>
+        <h3>Compound it</h3>
+        <p>Then we widen it — workflow by workflow — so the business keeps getting leaner and the leverage compounds instead of stalling after one pilot.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ METHOD / ATTRIBUTION ══ -->
+<section class="method">
+  <div class="wrap">
+    <span class="eyebrow">The Thinking Behind It</span>
+    <h2>A real method — applied by someone who's done the work</h2>
+    <p>
+      Good results aren't luck. There's a discipline to building an AI-native business: design the
+      workflows around AI instead of bolting it on, keep a human accountable for every automated
+      decision, and widen it one proven workflow at a time so the gains compound. That's the
+      approach behind every engagement.
+    </p>
+    <p>
+      Part of doing this well is knowing the best thinking in the field and putting it to work —
+      the same way getting the most out of AI means knowing how to use the best tools. I draw on
+      established frameworks for building AI-native organizations and apply them through real,
+      hands-on operating experience.
+    </p>
+    <p class="credit">
+      My approach is informed in part by the Exponential Organization / <em>Organizational
+      Singularity</em> body of work by Salim Ismail and contributors. I'm an independent operator
+      applying these ideas in practice — not affiliated with or certified by any framework. The
+      experience is the credential, and it grows every day.
+    </p>
+  </div>
+</section>
+
+<!-- ══ ALSO OFFERED ══ -->
+<section style="background:var(--cream-deep);">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Also Available</span>
+      <h2>Lighter ways to start</h2>
+    </div>
+    <div class="also">
+      <div class="also-card">
+        <h3>Advisory &amp; AI Roadmap</h3>
+        <p>Not ready to rebuild everything? Start with a focused engagement: a clear, practical read on where AI will pay off in your business first, and a roadmap to get there. A low-commitment on-ramp that often leads to a build.</p>
+      </div>
+      <div class="also-card">
+        <h3>Team Training &amp; Enablement</h3>
+        <p>Once the tools are in place, your people need to actually use them. I can train your team to work alongside AI day to day — practical and hands-on, tied to your real workflows, not generic theory.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ HOW IT STARTS ══ -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">How It Starts</span>
+      <h2>Simple to start. Built to execute.</h2>
+    </div>
+    <div class="process-grid">
+      <div class="step"><div class="step-num">01</div><h3>Talk it through</h3><p>A no-pressure call to understand the business and where the friction really is. You'll leave with a clear, honest read — whether or not we work together.</p></div>
+      <div class="step"><div class="step-num">02</div><h3>Map the path</h3><p>I come back with a practical plan: what to automate first, what it takes, and which way of working — retained seat or build-and-hand-off — fits best.</p></div>
+      <div class="step"><div class="step-num">03</div><h3>Build it together</h3><p>We build, wire it in, and prove it on real work — then widen it. I stay in it until the leverage is real, not just recommended.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA BAND ══ -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Want to see what AI could do for your business?</h2>
+    <p>Tell me what you're working on. The first conversation is free, and you'll leave it with a clear, honest next step.</p>
+    <div class="hero-actions">
+      <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="btn btn-gold">Book a Call →</a>
+      <a href="tel:18084400935" class="btn btn-ghost-light">Call (808) 440-0935</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="assets/olaf-logo-gold.png" alt="Olaf LLC"></div>
+        <p>An operator-led firm: AI advisory and development, real estate lending, a real estate fund, and capital introductions. From consulting to capital — one partner, from idea to funding.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="ai.html">AI Advisory &amp; Development</a>
+        <a href="index.html#lending">Real Estate Lending</a>
+        <a href="index.html#fund">Fund &amp; Distressed Assets</a>
+        <a href="index.html#capital">Capital &amp; Introductions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="tel:18084400935">(808) 440-0935</a>
+        <a href="mailto:shawn@olafllc.com">shawn@olafllc.com</a>
+        <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener">Book a Call</a>
+        <a href="index.html#contact">Contact Form</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-legal">
+        &copy; 2026 Olaf LLC. All rights reserved. &nbsp;|&nbsp; Mortgage services offered through Home Mortgage Alliance Corporation (HMAC), 4 Hutton Centre Dr., Ste. 500, Santa Ana, CA 92707 &mdash; <a href="https://www.nmlsconsumeraccess.org/EntityDetails.aspx/INDIVIDUAL/1165808" target="_blank" rel="noopener" style="color:rgba(232,226,213,0.7);text-decoration:underline;">NMLS #1165808</a>. This is not a commitment to lend. All loans subject to credit approval, underwriting, and program guidelines; terms subject to change. Equal Housing Lender. This advertisement is not from HUD, VA, or FHA and was not reviewed or approved by any government agency. AI advisory, fund, and capital-introduction services are provided by Olaf LLC and are separate from mortgage brokerage activity.
+      </p>
+      <div class="footer-badge">
+        <img src="assets/equal-housing-lender.png" alt="Equal Housing Lender">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('#navLinks a').forEach(function (a) {
+    a.addEventListener('click', function () { document.getElementById('navLinks').classList.remove('open'); });
+  });
+
+  // Scroll-reveal
+  (function () {
+    var els = document.querySelectorAll('.sec-head, .way, .case, .tcard, .step, .also-card, .thesis-lead');
+    if (!els.length) return;
+    els.forEach(function (el) { el.classList.add('reveal'); });
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io.observe(el); });
+    } else {
+      els.forEach(function (el) { el.classList.add('in'); });
+    }
+  })();
+</script>
+</body>
+</html>
