@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Real Estate Fund &amp; Distressed Assets — Olaf LLC | Hawaii Distressed Real Estate</title>
+<meta name="description" content="An operator-led real estate fund focused on distressed and value-add residential property and notes in Hawaii — disciplined sourcing, underwriting, and repositioning by a team with deep island experience. Olaf LLC, Hawaii.">
+<meta name="robots" content="index, follow">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Real Estate Fund &amp; Distressed Assets — Olaf LLC">
+<meta property="og:description" content="An operator-led fund focused on distressed and value-add Hawaii real estate — disciplined sourcing, underwriting, and repositioning.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://olafllc.com/fund.html">
+<meta property="og:image" content="https://olafllc.com/assets/olaf-logo-gold.png">
+
+<link rel="icon" type="image/png" href="assets/olaf-logo-gold.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Olaf LLC — Real Estate Fund & Distressed Assets",
+  "description": "An operator-led real estate fund focused on distressed and value-add residential property and mortgage notes in Hawaii, with disciplined sourcing, underwriting, and repositioning by a team with deep island experience.",
+  "url": "https://olafllc.com/fund.html",
+  "areaServed": ["Hawaii"],
+  "knowsAbout": ["Distressed real estate", "Value-add real estate", "Mortgage notes", "Real estate repositioning", "Hawaii residential market"]
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:       #F7F4ED;
+    --cream-deep:  #EFE8D9;
+    --cream-card:  #FBF9F4;
+    --ink:         #1A1611;
+    --ink-soft:    #2A241B;
+    --gold:        #B8922E;
+    --gold-deep:   #9A7820;
+    --gold-light:  #D4B85F;
+    --gold-bright: #E4Cd82;
+    --text:        #3C362B;
+    --text-soft:   #6A6253;
+    --muted:       #948B79;
+    --line:        rgba(26,22,17,0.10);
+    --line-gold:   rgba(184,146,46,0.30);
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 32px; }
+
+  h1, h2, h3 { font-family: 'Playfair Display', serif; color: var(--ink); font-weight: 700; line-height: 1.15; }
+
+  .eyebrow {
+    font-family: 'Cinzel', serif;
+    font-size: 12px; font-weight: 600;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold-deep);
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  /* Buttons */
+  .btn {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 500;
+    padding: 14px 28px; border-radius: 4px; cursor: pointer;
+    border: 1px solid transparent; transition: all 0.2s; white-space: nowrap;
+  }
+  .btn-gold {
+    background: linear-gradient(135deg, var(--gold) 0%, var(--gold-deep) 100%);
+    color: #fff; box-shadow: 0 4px 16px rgba(154,120,32,0.22);
+  }
+  .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(154,120,32,0.30); }
+  .btn-outline { background: transparent; border-color: var(--gold-deep); color: var(--gold-deep); }
+  .btn-outline:hover { background: var(--gold-deep); color: #fff; }
+  .btn-ghost-light { background: transparent; border-color: rgba(255,255,255,0.4); color: #fff; }
+  .btn-ghost-light:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+
+  /* ── Nav ── */
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(247,244,237,0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 110px; }
+  .nav-logo img { height: 88px; width: auto; display: block; }
+  .nav-links { display: flex; align-items: center; gap: 30px; }
+  .nav-links a { font-size: 14.5px; font-weight: 500; color: var(--text); transition: color 0.18s; }
+  .nav-links a:hover { color: var(--gold-deep); }
+  .nav-cta { display: flex; align-items: center; gap: 14px; }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; color: var(--ink); }
+
+  /* ── Hero ── */
+  .hero { position: relative; padding: 88px 0 76px; overflow: hidden; }
+  .hero::before {
+    content: ''; position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 50% at 80% 20%, rgba(212,184,95,0.18) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 60% at 10% 90%, rgba(184,146,46,0.10) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-triquetra {
+    position: absolute; right: 36px; top: 50%; transform: translateY(-50%);
+    width: 150px; height: auto; opacity: 0.12; pointer-events: none;
+  }
+  .hero-content { position: relative; max-width: 820px; }
+  .hero .eyebrow { display: inline-block; margin-bottom: 22px; }
+  .hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.4rem); font-weight: 800; margin-bottom: 24px; letter-spacing: -0.015em; }
+  .hero h1 .gold {
+    background: linear-gradient(120deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold-deep) 100%);
+    -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+    font-style: italic;
+  }
+  .hero-sub { font-size: 19px; font-weight: 300; color: var(--text-soft); max-width: 660px; margin-bottom: 36px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+  /* ── Trust strip ── */
+  .trust { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--cream-deep); }
+  .trust-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 22px; padding: 22px 0; }
+  .trust-item { display: flex; align-items: center; gap: 10px; font-size: 13.5px; color: var(--text-soft); font-weight: 500; }
+  .trust-item svg { width: 18px; height: 18px; color: var(--gold-deep); flex-shrink: 0; }
+
+  /* ── Section scaffolding ── */
+  section { padding: 88px 0; }
+  .sec-head { max-width: 720px; margin-bottom: 52px; }
+  .sec-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  .sec-head .eyebrow { display: block; margin-bottom: 16px; }
+  .sec-head h2 { font-size: clamp(2rem, 4vw, 2.9rem); margin-bottom: 18px; }
+  .sec-head p { font-size: 17px; color: var(--text-soft); font-weight: 300; }
+
+  /* ── Thesis band ── */
+  .thesis { background: var(--cream-deep); }
+  .thesis .wrap { max-width: 900px; }
+  .thesis-lead {
+    font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2.1rem);
+    color: var(--ink); font-weight: 600; line-height: 1.35; margin-bottom: 26px;
+  }
+  .thesis-lead .gold { color: var(--gold-deep); font-style: italic; }
+  .thesis p { font-size: 17px; color: var(--text-soft); font-weight: 300; margin-bottom: 18px; }
+  .thesis p:last-child { margin-bottom: 0; }
+
+  /* ── Island dynamics ── */
+  .islands-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 22px; }
+  .island {
+    background: var(--cream-card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 32px 34px; transition: transform 0.22s, box-shadow 0.22s, border-color 0.22s;
+  }
+  .island:hover { transform: translateY(-4px); box-shadow: 0 18px 44px rgba(26,22,17,0.08); border-color: var(--line-gold); }
+  .island .isl-name { font-family: 'Cinzel', serif; font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold-deep); margin-bottom: 12px; }
+  .island h3 { font-size: 1.3rem; margin-bottom: 10px; }
+  .island p { font-size: 14.5px; color: var(--text-soft); }
+
+  /* ── Approach (how the fund operates) ── */
+  .approach { background: var(--ink); color: #E8E2D5; }
+  .approach .sec-head h2 { color: #fff; }
+  .approach .sec-head .eyebrow { color: var(--gold-light); }
+  .approach .sec-head p { color: rgba(232,226,213,0.75); }
+  .approach .sec-head.center .eyebrow::after { background: linear-gradient(90deg, var(--gold-light), var(--gold)); }
+  .steps-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+  .astep { background: rgba(255,255,255,0.03); border: 1px solid rgba(212,184,95,0.20); border-radius: 12px; padding: 28px 26px; }
+  .astep .astep-num { font-family: 'Cinzel', serif; font-size: 13px; font-weight: 700; color: var(--gold-light); letter-spacing: 0.1em; margin-bottom: 12px; }
+  .astep h3 { color: #fff; font-size: 1.15rem; margin-bottom: 10px; font-family: 'Playfair Display', serif; }
+  .astep p { color: rgba(232,226,213,0.78); font-weight: 300; font-size: 14px; }
+
+  /* ── Two strategies ── */
+  .strat-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+  .strat { background: var(--cream-card); border: 1px solid var(--line); border-radius: 12px; padding: 38px 36px; }
+  .strat .strat-icon { width: 50px; height: 50px; border-radius: 10px; margin-bottom: 20px; background: linear-gradient(135deg, rgba(184,146,46,0.14), rgba(212,184,95,0.10)); display: flex; align-items: center; justify-content: center; }
+  .strat .strat-icon svg { width: 26px; height: 26px; color: var(--gold-deep); }
+  .strat h3 { font-size: 1.5rem; margin-bottom: 12px; }
+  .strat p { font-size: 15px; color: var(--text-soft); margin-bottom: 16px; }
+  .strat-list { list-style: none; }
+  .strat-list li { font-size: 14px; color: var(--text); padding: 6px 0 6px 24px; position: relative; }
+  .strat-list li::before { content: ''; position: absolute; left: 4px; top: 13px; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+
+  /* ── Team / managing members ── */
+  .team { background: var(--cream-deep); }
+  .team .wrap { max-width: 920px; }
+  .team .sec-head { margin-bottom: 36px; }
+  .team p { font-size: 16.5px; color: var(--text-soft); font-weight: 300; margin-bottom: 18px; }
+  .team p:last-child { margin-bottom: 0; }
+  .team strong { color: var(--ink); font-weight: 600; }
+
+  /* ── CTA band ── */
+  .cta-band { background: linear-gradient(120deg, var(--ink) 0%, var(--ink-soft) 100%); color: #fff; text-align: center; }
+  .cta-band h2 { color: #fff; font-size: clamp(2rem, 4vw, 2.9rem); margin-bottom: 16px; }
+  .cta-band p { color: rgba(255,255,255,0.7); font-size: 17px; font-weight: 300; max-width: 580px; margin: 0 auto 18px; }
+  .cta-band .cta-fine { font-size: 12.5px; color: rgba(255,255,255,0.5); max-width: 620px; margin: 0 auto 30px; line-height: 1.7; }
+  .cta-band .hero-actions { justify-content: center; }
+
+  /* ── Footer ── */
+  footer { background: var(--ink); color: rgba(232,226,213,0.65); padding: 64px 0 32px; }
+  .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .footer-logo img { height: 84px; margin-bottom: 18px; }
+  .footer-brand p { font-size: 14px; max-width: 320px; line-height: 1.7; }
+  .footer-col h4 { font-family: 'Cinzel', serif; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); margin-bottom: 16px; }
+  .footer-col a, .footer-col p { display: block; font-size: 14px; color: rgba(232,226,213,0.65); margin-bottom: 10px; transition: color 0.18s; }
+  .footer-col a:hover { color: #fff; }
+  .footer-bottom { padding-top: 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 18px; align-items: flex-start; }
+  .footer-legal { font-size: 12px; color: rgba(232,226,213,0.45); line-height: 1.7; max-width: 820px; }
+  .footer-badge { display: flex; align-items: center; gap: 14px; }
+  .footer-badge img { height: 54px; width: auto; }
+
+  /* energy: scroll reveal */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.in { opacity: 1; transform: none; }
+  .sec-head.center .eyebrow::after { content: ''; display: block; width: 48px; height: 2px; margin: 14px auto 0; background: linear-gradient(90deg, var(--gold), var(--gold-light)); border-radius: 2px; }
+  @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .islands-grid, .strat-grid, .footer-top { grid-template-columns: 1fr; }
+    .steps-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 680px) {
+    .wrap { padding: 0 22px; }
+    .nav-links { display: none; }
+    .nav-toggle { display: block; }
+    .nav-inner { height: 92px; }
+    .nav-logo img { height: 70px; }
+    .nav-links.open {
+      display: flex; flex-direction: column; position: absolute; top: 92px; left: 0; right: 0;
+      background: var(--cream); border-bottom: 1px solid var(--line); padding: 20px 22px; gap: 18px; align-items: flex-start;
+    }
+    .nav-cta .btn-outline { display: none; }
+    section { padding: 60px 0; }
+    .hero { padding: 60px 0 52px; }
+    .steps-grid { grid-template-columns: 1fr; }
+    .footer-bottom { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══ NAV ══ -->
+<nav>
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Olaf LLC — Home">
+      <img src="assets/olaf-logo-gold.png" alt="Olaf LLC">
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="ai.html">AI Advisory</a>
+      <a href="lending.html">Lending</a>
+      <a href="fund.html">Fund</a>
+      <a href="index.html#capital">Capital</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="index.html#contact" class="btn btn-outline">Get in Touch</a>
+      <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener" class="btn btn-gold">Book a Call</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<header class="hero">
+  <img class="hero-triquetra" src="assets/triquetra-gold.png" alt="" aria-hidden="true">
+  <div class="wrap hero-content">
+    <span class="eyebrow">Real Estate Fund &amp; Distressed Assets</span>
+    <h1>Disciplined real estate, in a market we know by <span class="gold">heart</span>.</h1>
+    <p class="hero-sub">
+      An operator-led fund focused on distressed and value-add residential property and notes in
+      Hawaii — a market with its own rhythm, where local knowledge and patient, hands-on execution
+      are what turn complexity into opportunity.
+    </p>
+    <div class="hero-actions">
+      <a href="#thesis" class="btn btn-outline">How We Think About Hawaii</a>
+      <a href="index.html#contact" class="btn btn-gold">Get in Touch →</a>
+    </div>
+  </div>
+</header>
+
+<!-- ══ TRUST ══ -->
+<div class="trust">
+  <div class="wrap trust-inner">
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg> Distressed &amp; value-add focus</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg> Hawaii-focused, locally sourced</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg> Operator-led, disciplined underwriting</div>
+    <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4Z"/></svg> Property &amp; note strategies</div>
+  </div>
+</div>
+
+<!-- ══ THESIS ══ -->
+<section class="thesis" id="thesis">
+  <div class="wrap">
+    <p class="thesis-lead">
+      Hawaii isn't a mainland market — and that's precisely the
+      <span class="gold">opportunity</span>.
+    </p>
+    <p>
+      Distress in Hawaii doesn't arrive in a flood. The islands have long foreclosure timelines,
+      strong borrower protections, structural housing undersupply, and a high cost basis with
+      limited replacement inventory. The result is a slow-release market: distress emerges
+      gradually, stays constrained, and rewards those with the patience and local relationships to
+      source it deal by deal.
+    </p>
+    <p>
+      That dynamic is hard for outside capital to navigate and easy to misread from afar. It's also
+      exactly the kind of market where deep island knowledge, hands-on sourcing, and disciplined
+      underwriting create a real edge — turning a complex, slow-moving landscape into a steady
+      stream of carefully selected opportunities.
+    </p>
+  </div>
+</section>
+
+<!-- ══ ISLAND DYNAMICS ══ -->
+<section id="islands">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Local Knowledge</span>
+      <h2>Every island is a different market</h2>
+      <p>One of the most misunderstood things about Hawaii real estate is that it isn't one market — each island has its own supply, pricing, and execution dynamics. We focus where the opportunity and the discipline line up.</p>
+    </div>
+    <div class="islands-grid">
+      <div class="island">
+        <div class="isl-name">O‘ahu · Honolulu</div>
+        <h3>Largest volume, most competitive</h3>
+        <p>The deepest pool of distressed property in the state — but also the most competitive, with firm pricing and institutional presence. Opportunity here demands selectivity and speed.</p>
+      </div>
+      <div class="island">
+        <div class="isl-name">Hawai‘i Island</div>
+        <h3>Growing volume, attractive entry</h3>
+        <p>A moderate but growing distressed market with more attractive price points and real execution flexibility — often the sweet spot of volume and value.</p>
+      </div>
+      <div class="island">
+        <div class="isl-name">Kaua‘i</div>
+        <h3>Thin but selective</h3>
+        <p>Limited inventory and higher price points mean thinner volume — but selective, well-chosen opportunities can still be found for those paying attention.</p>
+      </div>
+      <div class="island">
+        <div class="isl-name">Discipline Over Reach</div>
+        <h3>We don't chase every market</h3>
+        <p>Knowing where <em>not</em> to operate matters as much as knowing where to. We concentrate where our knowledge and sourcing give us a genuine edge, and pass on the rest.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TWO STRATEGIES ══ -->
+<section id="strategies" style="background:var(--cream-deep);">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">Two Ways We Create Value</span>
+      <h2>Property and notes</h2>
+      <p>We work both sides of distress — the real estate itself, and the debt behind it. Each opens a different path to the same goal: acquiring quality at a discount and repositioning it with discipline.</p>
+    </div>
+    <div class="strat-grid">
+      <div class="strat">
+        <div class="strat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+        <h3>Distressed &amp; Value-Add Property</h3>
+        <p>Acquiring distressed and value-add residential property, improving it where needed, and repositioning it for sale — sourced and executed on the ground by people who know these neighborhoods.</p>
+        <ul class="strat-list">
+          <li>Hands-on local sourcing</li>
+          <li>Rehabilitation &amp; repositioning where it adds value</li>
+          <li>Disciplined, deal-by-deal underwriting</li>
+        </ul>
+      </div>
+      <div class="strat">
+        <div class="strat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4zM8 9h8M8 13h5"/></svg></div>
+        <h3>Distressed Mortgage Notes</h3>
+        <p>Acquiring quality first-position residential notes in default or foreclosure at a discount — then working toward the right outcome, whether that's a restructuring with the borrower or an orderly resolution.</p>
+        <ul class="strat-list">
+          <li>Quality-first note selection</li>
+          <li>Borrower workouts &amp; restructuring where possible</li>
+          <li>Built for Hawaii's unique foreclosure landscape</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ APPROACH / HOW IT OPERATES ══ -->
+<section class="approach" id="approach">
+  <div class="wrap">
+    <div class="sec-head center">
+      <span class="eyebrow">How We Operate</span>
+      <h2>Sourced locally. Underwritten strictly.</h2>
+      <p>Every asset moves through the same disciplined path — and nothing enters the portfolio without clearing the bar.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="astep">
+        <div class="astep-num">01</div>
+        <h3>Source</h3>
+        <p>Opportunities are identified and surfaced on the ground, through local relationships and active, hands-on sourcing across the islands we focus on.</p>
+      </div>
+      <div class="astep">
+        <div class="astep-num">02</div>
+        <h3>Inspect &amp; Evaluate</h3>
+        <p>Every property — or the property securing a note — is personally inspected and evaluated. No deal moves forward on paper alone.</p>
+      </div>
+      <div class="astep">
+        <div class="astep-num">03</div>
+        <h3>Underwrite &amp; Approve</h3>
+        <p>Each opportunity is underwritten against strict, pre-set criteria and brought to the managing members for approval. Discipline at the gate is the whole point.</p>
+      </div>
+      <div class="astep">
+        <div class="astep-num">04</div>
+        <h3>Reposition &amp; Resolve</h3>
+        <p>Approved assets are improved, restructured, or resolved toward the right exit — managed actively from acquisition through disposition.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TEAM / MANAGING MEMBERS ══ -->
+<section class="team" id="team">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Who Runs It</span>
+      <h2>Operator-led, by people who know Hawaii</h2>
+    </div>
+    <p>
+      This is an operator-led fund managed by a team with deep Hawaii experience. Investment
+      decisions — what the fund acquires, and on what terms — sit with its managing members, who
+      bring decades of combined experience in Hawaii real estate, lending, and capital markets, and
+      who manage the day-to-day business of the fund directly.
+    </p>
+    <p>
+      <strong>Shawn O. Kelly</strong> is one of the fund's three managing members. Alongside more
+      than 25 years in Hawaii mortgage and lending and his work across Olaf LLC, he helps set the
+      fund's investment discipline and runs its day-to-day operations — bringing an operator's eye
+      to sourcing, underwriting, and repositioning.
+    </p>
+    <p>
+      Sourcing and execution on the ground are led by a seasoned local real estate operator with a
+      multi-year track record acquiring, rehabilitating, and selling distressed Hawaii property —
+      the hands-on experience that turns a difficult market into a disciplined, repeatable process.
+    </p>
+  </div>
+</section>
+
+<!-- ══ CTA BAND ══ -->
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Want to know more about how we work?</h2>
+    <p>If our approach to Hawaii real estate resonates and you'd like to learn more about what we do, we're glad to start a conversation.</p>
+    <p class="cta-fine">
+      This page is for general information only. It describes the activities of an operator-led real
+      estate fund and is not an offer to sell or a solicitation of an offer to buy any security or
+      investment, and nothing here should be relied upon as investment advice. Any such offer is
+      made only to qualified persons through formal offering documents.
+    </p>
+    <div class="hero-actions">
+      <a href="index.html#contact" class="btn btn-gold">Get in Touch →</a>
+      <a href="tel:18084400935" class="btn btn-ghost-light">Call (808) 440-0935</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="assets/olaf-logo-gold.png" alt="Olaf LLC"></div>
+        <p>An operator-led firm: AI advisory and development, real estate lending, a real estate fund, and capital introductions. From consulting to capital — one partner, from idea to funding.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="ai.html">AI Advisory &amp; Development</a>
+        <a href="lending.html">Real Estate Lending</a>
+        <a href="fund.html">Fund &amp; Distressed Assets</a>
+        <a href="index.html#capital">Capital &amp; Introductions</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="tel:18084400935">(808) 440-0935</a>
+        <a href="mailto:shawn@olafllc.com">shawn@olafllc.com</a>
+        <a href="https://tidycal.com/shawnolafkelly" target="_blank" rel="noopener">Book a Call</a>
+        <a href="index.html#contact">Contact Form</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-legal">
+        &copy; 2026 Olaf LLC. All rights reserved. &nbsp;|&nbsp; The information on this page is provided for general informational purposes only and describes the activities of an operator-led real estate fund. It is not, and should not be construed as, an offer to sell or a solicitation of an offer to buy any security, nor as investment, legal, or tax advice. Any offer or sale of securities is made only to qualified investors pursuant to formal offering documents and applicable exemptions. Past performance is not indicative of future results; all investments involve risk, including the possible loss of principal. Mortgage services offered through Home Mortgage Alliance Corporation (HMAC), NMLS #1165808, and are separate from the fund and from Olaf LLC's advisory and capital-introduction services.
+      </p>
+      <div class="footer-badge">
+        <img src="assets/equal-housing-lender.png" alt="Equal Housing Lender">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu
+  document.getElementById('navToggle').addEventListener('click', function () {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  document.querySelectorAll('#navLinks a').forEach(function (a) {
+    a.addEventListener('click', function () { document.getElementById('navLinks').classList.remove('open'); });
+  });
+
+  // Scroll-reveal
+  (function () {
+    var els = document.querySelectorAll('.sec-head, .island, .strat, .astep, .thesis-lead, .team p');
+    if (!els.length) return;
+    els.forEach(function (el) { el.classList.add('reveal'); });
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      els.forEach(function (el) { io.observe(el); });
+    } else {
+      els.forEach(function (el) { el.classList.add('in'); });
+    }
+  })();
+</script>
+</body>
+</html>
